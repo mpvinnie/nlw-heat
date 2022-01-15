@@ -76,7 +76,7 @@ function AuthProvider({ children }: AuthProviderProps) {
 
         await AsyncStorage.multiSet([
           [USER_STORAGE, JSON.stringify(user)],
-          [TOKEN_STORAGE, JSON.stringify(token)]
+          [TOKEN_STORAGE, token]
         ])
 
         setUser(user)
